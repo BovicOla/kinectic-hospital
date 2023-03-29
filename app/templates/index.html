@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Hello, {{ current_user.firstname }} {{ current_user.lastname.upper() }}</h1>
+    <p>Email, {{ current_user.email }}</p>
+    {% if current_user.last_seen %}<p>Phone number, {{ current_user.phone_number }}</p>
+    {% endif %}
+    {% if current_user.last_seen %}<p>Last seen on: {{ current_user.last_seen }}</p>{% endif %}
+{% endblock %} 

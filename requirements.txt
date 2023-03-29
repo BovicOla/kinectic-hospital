@@ -1,0 +1,10 @@
+flask
+flask-wtf
+flask-sqlalchemy
+flask_migrate
+flask-login
+jinja2
+sqlalchemy
+alembic
+python-dotenv
+email-validator

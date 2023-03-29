@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<style>
+	#record-form{
+                background-color: rgba(35, 34, 57, 0.7);; 
+                padding-left: 60px;
+                padding-right: 60px;
+                padding-top:  180px;
+                padding-bottom: 60px;
+               
+                max-width: 600px;
+                margin: auto;
+                font-size: 18px;
+                color: hsl(0, 25%, 97%);
+                border-radius: 5px;
+                font-size: 20px;
+                
+                
+                
+            }
+            .tag{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+                
+                
+               
+            }
+            input, select, textarea{
+                padding: 8px;
+                border-radius: 5px;
+                font-size: 18px;
+                color: gray;
+                margin-top: 10px;
+            }
+            h1{
+              font-size: 40px;
+              font-weight: bold;
+              text-align: center;
+              text-transform: uppercase;
+              color: white;
+             
+            }
+            p{
+                font-style: italic;
+                text-align: center;
+                font-size: 25px;
+                color: white;
+                 
+            }
+            button{
+                width: 100%;
+                padding: 8px;
+                font-size: 18px;
+                color: gray;
+                border-radius: 5px;
+                background-color:lightcyan;
+            }
+            body{
+                background-image: url("image.jpg");
+                background-color:  hsla(258, 73%, 47%, 0.8);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-blend-mode: overlay;
+                
+            }
+            #gb{
+                position: fixed;
+                width: 100%;
+                z-index: 1;
+                background: #3A3B3C;
+                top: 0;
+                left: 0;
+            }
+	</style>
+</head>
+
+<body>
+<div id="gb">    
+        <h1 id="title">Patient Record Form</h1>
+        </div>
+        <form id="record-form">
+             
+            <div class="tag">
+                <label for ="name" id="name-label">First Name</label>
+                <input type="text" id="name" name="name"  placeholder="Enter your first name"   required>
+            </div> 
+            <div class="tag">
+                <label for ="name" id="name-label">Last Name</label>
+                <input type="text" id="name" name="name"  placeholder="Enter your last name"   required>
+                </div>
+            <div class="tag">
+                <label for="email" id="email-label">Email</label> 
+                <input type="email" id="email"   placeholder="Enter your email" required>
+            </div>
+            <div class="tag">
+                <label for="age" id="number-label">Age(optional)</label>
+                <input type="number" id="number" name="age"  min="18" max="45" placeholder="age" >
+            </div>
+            <div class="tag">
+                <label for="mobilenumber" id="number-label">Mobile Number</label> 
+                <input type="number" id="number"   placeholder="Enter your mobile number" required>
+            </div>
+            <div class="tag">
+                <label for="address" id="address-label">Address</label> 
+                <textarea placeholder="Enter your address here" rows="3"></textarea>
+            </div>
+            <div class="tag">
+                <label for="gender" id="gender-label">Gender</label>
+			    <select name="gender">
+			    <option value="">Please select one…</option>
+			    <option value="female">Female</option>
+			    <option value="male">Male</option>
+			    <option value="Prefer not to answer">Prefer not to Answer</option>
+                </select>
+			</div>
+            <div class="tag">
+                <label for="employment" id="employment-label">Employment</label>
+                <select name="select-occupation">
+                <option value="">Please select one</option>
+                <option value="student">Student</option>
+				<option value="part time job">Employed</option>
+				<option value="part time job">Self Employed</option>
+				<option value="part time job">Unemployed</option>
+                <option value="full time job">Full Time Job</option>
+                <option value="part time job">Part Time Job</option>
+				<option value="prefer not to say">Prefer Not to Say</option>
+                <option value="other">Other</option> 
+                </select>
+                </div>
+                <button type="submit" id="submit" name="submit" value="submit">Submit</button>
+                    
+        </form>
+		</body>
+		</html>        

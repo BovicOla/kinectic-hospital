@@ -1,0 +1,12 @@
+CREATE TABLE registrations (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  first_name VARCHAR(50) NOT NULL,
+  last_name VARCHAR(50) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  age INT NOT NULL,
+  mobile_number VARCHAR(20) NOT NULL,
+  address VARCHAR(255) NOT NULL,
+  gender ENUM('male', 'female', 'prefer not to answer') NOT NULL,
+  employment ENUM('student', 'employed', 'self employed', 'unemployed','full time job' , 'part time job', 'prefer not to say') NOT NULL
+patient_record TEXT
+);
